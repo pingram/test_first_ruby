@@ -35,5 +35,3 @@ def translate_word(word)
 	end
 	return word
 end
-
-# p translate('apple orange sdfaaaa')

@@ -5,6 +5,7 @@ class Dictionary
 		@entries = {}
 	end
 	
+	# merge the input with the entries
 	def add(input)
 		if input.is_a?(Hash)
 			@entries = @entries.merge(input)

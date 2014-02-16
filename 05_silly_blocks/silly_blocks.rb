@@ -1,7 +1,5 @@
 def reverser(&block)
-	# yield.reverse
 	block.call.split(/\s+/).map { |elem| elem.reverse }.join(' ')
-	
 end
 
 def adder(num = 1)

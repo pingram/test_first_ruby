@@ -1,4 +1,6 @@
 class Book
+	@title
+
 	def title=(value)
 		str_arr = value.split(/\s+/)
 		#excluded words to not capitalize

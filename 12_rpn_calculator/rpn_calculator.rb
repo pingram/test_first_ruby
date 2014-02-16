@@ -42,6 +42,7 @@ class RPNCalculator
 		str_in.split(' ').each { |val| syms_in << val.to_sym }
 		# puts "syms_in: #{syms_in}"
 		op_syms = [:+, :-, :*, :/]
+		# convert the number symbols to Fixnums, leave the operator symbols alone
 		syms_in.map do |symbol|
 			if op_syms.include?(symbol)
 				syms_update << symbol
@@ -132,28 +133,3 @@ class RPNCalculator
 	end
 	
 end
-
-# p calculator = RPNCalculator.new
-# p calculator.tokens("1 2 3 * + 4 5 - /")
-
-# calculator.push(2)
-    # calculator.push(3)
-    # calculator.minus
-    # p calculator.value
-
-
-# p calculator.push(2)
-# p calculator.push(3)
-# p calculator.plus
-# p calculator.value
-# p calculator.push(5)
-# p calculator.plus
-# p calculator.value
-
-# calculator.push(2)
-    # calculator.push(3)
-    # calculator.push(4)
-    # calculator.plus
-    # p calculator.value
-    # calculator.plus
-    # p calculator.value
